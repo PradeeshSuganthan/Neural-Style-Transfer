@@ -9,18 +9,18 @@ Example:
 
 Test image:
 
-![](./profilepicture.jpg)
+![](./images/profilepicture.jpg)
 
 
 Style images:
 
-![](./starrynight.jpg)
+![](./images/starrynight.jpg)
 
-![](./monet.jpg)
+![](./images/monet.jpg)
 
-![](./picasso.jpg)
+![](./images/picasso.jpg)
 
-![](./composition7.jpg)
+![](./images/composition7.jpg)
 
 Transformed images:
 
