@@ -9,7 +9,7 @@ Example:
 
 Test image:
 
-![](./profilepicresized.jpg)
+![](./profilepicture.jpg)
 
 
 Style images:
