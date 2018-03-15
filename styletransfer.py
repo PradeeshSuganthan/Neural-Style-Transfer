@@ -11,8 +11,8 @@ import img2gif
 vgg_mean = np.array([103.939, 116.779, 123.68], dtype = np.float32)
 content_weight = .025
 style_weight = 1
-cont_path = 'tubingen.jpg'
-style_path = 'composition7.jpg'
+cont_path = 'profilepic.jpg'
+style_path = 'starrynight.jpg'
 image_name = cont_path.rsplit('.')[0] + '_' + style_path.rsplit('.')[0]
 image_width, image_height = load_img(cont_path).size
 height = 400
@@ -97,9 +97,9 @@ def main():
 
     #STYLE LOSS
     #choose layers to extract style from
-    style_layers = ['block1_conv2', 'block2_conv2',
-                      'block3_conv1', 'block4_conv1',
-                      'block5_conv1']
+    style_layers = ['block1_conv1', 'block2_conv1',
+                      'block3_conv2', 'block4_conv2',
+                      'block5_conv2']
 
     #get style loss for each layer
     for layer in style_layers:
@@ -152,6 +152,7 @@ def main():
 
     evaluator = Evaluator()
     x = np.random.uniform(0, 255, (1, height, width, 3)) - 128.
+
 
     #train on content and style images
     for i in range(iterations):
